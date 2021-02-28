@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Adam Goddard</title>
+  <!-- CSS Style Sheets -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
+  <!-- Bootstrap Javascript -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+  <!--  Font Awesome Fonts  -->
+  <script src="https://kit.fontawesome.com/6b5e010627.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<!-- Title Section -->
+<section id="title" class="text-justify">
+    <div class="container-fluid">
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand text-center">Adam Goddard<br>
+                <span class="subtitle">
+                    Geophysicist
+                    <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                    Software Developer
+                </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item ml-auto">
+                        <a class="nav-link" href="#title">About Me</a>
+                    </li>
+                    <li class="nav-item ml-auto">
+                        <a class="nav-link" href="#projects">Example Projects</a>
+                    </li>
+                    <li class="nav-item ml-auto">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="row">
+            <div class="col-sm-8">
+              <h1 class="big-heading">About me</h1>
+                <p>
+                    Hello! My name is Adam. I am a geophysicist and programmer,
+                    looking for a new role as a junior software developer.
+                    I currently live in London for work. However, I'm originally
+                    from Yorkshire and flexible on location.
+                </p>
+                <p>
+                    The main purpose of this webpage is to provide links to some
+                    example Python projects. There is also a short overview of
+                    my qualifications and experience at the bottom of the page.
+                </p>
+                <p>
+                    The projects were all done on evenings after work and
+                    weekends - it is likely that I will improve them over time
+                    and add new features.
+                </p>
+                <a class="btn btn-dark btn-lg contact-button" href="mailto:adam_goddard1@outlook.com">
+                    <i class="fa fa-envelope" aria-hidden="true"></i> Contact me
+                </a>
+            </div>
+            <div class="col-sm-4 title-image-div">
+              <img src="images/me.jpg" class ="title-image" alt="Me">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects">
+    <div class="container-fluid">
+        <h1 class="big-heading text-center"> Example Projects </h1>
+        <table class="table table-hover table-bordered text-left">
+            <thead>
+                <tr>
+                    <th scope="col" class="text-center">Project Name:</th>
+                    <th scope="col" class="text-center">Description:</th>
+                    <th scope="col" class="text-center">Link to Github:</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row" class="align-middle">
+                        Flight Finder (Web App)
+                    </th>
+                    <td>
+                        A flask web application which helps the user to find the
+                        cheapest flights within a specified time period. The app
+                        has been deployed on
+                        <a href="https://cheap-flight-finder-app.herokuapp.com" target="_blank">Heroku</a>.
+                        <br>
+                        <strong>Tech:</strong> OOP, REST APIs, HTML, CSS, Bootstrap, Flask, Unittest.
+                    </td>
+                    <td class="align-middle text-center">
+                        <a href="https://github.com/A-G25/flight-finder-web-app" target="_blank">
+                            <i class="fa fa-github fa-3x" aria-hidden="true"></i>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row" class="align-middle">Snake Game</th>
+                    <td>
+                        A python version of the classic mobile game "snake", implemented
+                        using the turtle graphics module.
+                        <br>
+                        <strong>Tech:</strong> OOP.
+                    </td>
+                    <td class="align-middle text-center">
+                        <a href="https://github.com/A-G25/classic-snake-game" target="_blank">
+                            <i class="fa fa-github fa-3x" aria-hidden="true"></i>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row" class="align-middle">Vanguard Fund Price Notifier</th>
+                    <td>
+                        A webscraper which extracts investment fund prices and portfolio
+                        data from the Vanguard website, and then emails the user to
+                        let them know which fund experienced the biggest drop in price
+                        the previous day and what the 3 largest holdings in the fund are.
+                        <br>
+                        <strong>Tech:</strong> OOP, Webscraping, HTML, SMTP, Selenium.
+                    </td>
+                    <td class="align-middle text-center">
+                        <a href="https://github.com/A-G25/vanguard-fund-price-webscraper" target="_blank">
+                            <i class="fa fa-github fa-3x" aria-hidden="true"></i>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row" class="align-middle">Trivia Quiz</th>
+                    <td>
+                        A trivia quiz game which extracts a question bank from an API
+                        and asks the player questions through a graphical user interface.
+                        <br>
+                        <strong>Tech:</strong> OOP, GUI (Tkinter), RestAPIs.
+                    </td>
+                    <td class="align-middle text-center">
+                        <a href="https://github.com/A-G25/trivia-quiz-game" target="_blank">
+                            <i class="fa fa-github fa-3x" aria-hidden="true"></i>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row" class="align-middle">Automated ISP Tester + Twitter Bot</th>
+                    <td>
+                        A bot which uses a selenium webdriver to run an internet speed test,
+                        compares the download speed to the value promised by an internet
+                        service provider and then tweets the ISP if the internet is too slow.
+                        <br>
+                        <strong>Tech:</strong> OOP, Webscraping, HTML, Selenium.
+                    </td>
+                    <td class="align-middle text-center">
+                        <a href="https://github.com/A-G25/isp-tester-and-twitter-bot" target="_blank">
+                            <i class="fa fa-github fa-3x" aria-hidden="true"></i>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row" class="align-middle">Stock Tracker and News Provider</th>
+                    <td>
+                        A stock price tracker which takes a stock ticker as the input
+                        and then notifies the user if the stock price drops by more
+                        than a specified %, also providing links to breaking news
+                        articles for the company.
+                        <br>
+                        <strong>Tech:</strong> RestAPIs, HTTP, Twilio.
+                    </td>
+                    <td class="align-middle text-center">
+                        <a href="https://github.com/A-G25/stock-tracker" target="_blank">
+                            <i class="fa fa-github fa-3x" aria-hidden="true"></i>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row" class="align-middle">Rain Monitor</th>
+                    <td>
+                        An application which monitors weather data in a specified
+                        area and sends an SMS warning if rain is likely on the day.
+                        <br>
+                        <strong>Tech:</strong> RestAPIs.
+                    </td>
+                    <td class="align-middle text-center">
+                        <a href="https://github.com/A-G25/daily-rain-checker" target="_blank">
+                            <i class="fa fa-github fa-3x" aria-hidden="true"></i>
+                        </a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<!-- Experience Section -->
+<section id="experience" class="text-center">
+    <h1 class="big-heading"> Experience </h1>
+    <div class="row">
+        <div class="col-md-8 col-sm-6">
+            <h3 class="mid-heading">Programming</h3>
+            <p class="text-justify">
+                The main programming language I have experience in is Python
+                (both Linux and Windows environment). However, I have had exposure
+                to other languages during my education and work (MATLAB, some C++).
+                In my current job, the programming I do is predominantly for
+                data analysis and numerical modelling, using libraries such as
+                numpy and pandas.
+            </p>
+            <img class="skill-image-coding" src="https://media.giphy.com/media/iIGT8Y1rOYhBpdHh1C/giphy.gif" alt="coding GIF">
+            <p class="text-justify">
+                Outside of my full-time job, I have been developing my knowledge
+                of other areas of programming and working on my own projects,
+                covering a broad cross-section of languages and tools, such as
+                HTML, CSS, web development using Flask, SQLite, PostgreSQL,
+                REST APIs (interaction and design), web scraping and automation
+                (Beautiful Soup/ Selenium), GUIs, SMTP, data visualisation with seaborn.
+            </p>
+            <p class="text-justify">
+                I am happy to work in my own free time to learn new programming
+                languages and frameworks as needed and consider programming a hobby,
+                which is why I would like to pivot my career into software development
+                for the long-term.
+            </p>
+            <h3 class="mid-heading">Geophysics</h3>
+            <p class="text-justify">
+                My current full-time job (geophysicist) is a client facing
+                role in which I help large energy companies from Europe, Africa
+                and the Middle East to discover new hydrocarbon reserves and find
+                reservoirs deep inside the earth for trapping CO<sub>2</sub>
+                from the atmosphere.
+            </p>
+            <p class="text-justify">
+                This is done using a powerful Linux workstation, a 250 petaflop
+                HPC cluster and a range of skills (e.g. physics, maths, signal
+                processing, programming, quantitative analysis, numerical
+                modelling) to image the inside of the earth and detect anomalies.
+            </p>
+            <p class="text-justify">
+                Projects are typically several months long and must be completed
+                to strict deadlines due to the high costs involved. Regular
+                contact with clients is maintained through a combination of
+                weekly technical presentations, review meetings, written reports
+                and emails.
+            </p>
+            <figure>
+                <img class="skill-image-geophysics" src="images/seismic_stack.png" alt="seismic reflection image">
+                <figcaption class="caption text-justify">
+                    Fig 1.) An image of the inside of the earth, showing a
+                    potential oil reservoir. This image was produced by applying
+                    signal processing techniques to seismic waves that reflect
+                    from the earths interior.
+                </figcaption>
+            </figure>
+            <h3 class="mid-heading">Hobbies</h3>
+            <p class="text-justify">
+                Outside of work I try to develop my skills and knowledge by
+                studying, completing hobby projects and attending hackathons
+                (for example the 2017 EAGE hackathon in which my team won a prize).
+            </p>
+            <p class="text-justify">
+                I am also a big fan of sport (primarily football) and travel
+                - Colombia was my most recent trip and I would like to go to Peru
+                when the Covid-19 pandemic improves.
+            </p>
+            <div class="row hobby-icons">
+                <div class="col-sm-4">
+                    <i class="fab fa-python fa-3x"></i>
+                </div>
+                <div class="col-sm-4">
+                    <i class="fas fa-futbol fa-3x"></i>
+                </div>
+                <div class="col-sm-4">
+                    <i class="fas fa-plane-departure fa-3x"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6 qual-div">
+            <h3 class="small-heading qual-title">Full-time Work History:</h3>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                    <strong>Geophysicist</strong>
+                    <br>(DUG Technology)
+                    <br>2019-present
+                </li>
+                <li class="list-group-item">
+                    <strong>Junior Geophysicist</strong>
+                    <br>(DUG Technology)
+                    <br>2017-2019
+                </li>
+                <li class="list-group-item">
+                    <strong>Intern Geophysicist</strong>
+                    <br>(DUG Technology)
+                    <br>2017-2017
+                </li>
+            </ul>
+            <h3 class="small-heading qual-title">Education:</h3>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                    <strong>MSc Geophysics (Distinction)</strong>
+                    <br>Grade-point average: 77%
+                    <br>University of Leeds
+                    <br>2016-2017
+                </li>
+                <li class="list-group-item">
+                    <strong>BSc Geophysics (First Class)</strong>
+                    <br>Grade-point average: 83%
+                    <br>University of Durham
+                    <br>2013-2016
+                </li>
+                <li class="list-group-item">
+                    <strong>A Levels(A, A, A*, A)</strong>
+                    <br>Physics, Maths, Geology, Geography
+                    <br>2011-2013
+                </li>
+            </ul>
+            <h3 class="small-heading qual-title">Awards:</h3>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                    <span class="award-title">
+                        <strong>
+                            University of Leeds: School of Earth and Environment Award
+                        </strong>
+                        <br>2017
+                    </span>
+                    <br>
+                    <span class="award-text">
+                        Awarded for graduating with the highest mark in my MSc cohort.
+                    </span>
+                </li>
+                <li class="list-group-item">
+                    <span class="award-title">
+                        <strong>
+                            Agile Scientific AI Hackathon (Dell Innovation Prize)
+                        </strong>
+                        <br>2017
+                    </span>
+                    <br>
+                    <span class="award-text">
+                        My team won this prize at a 2 day machine learning
+                        hackathon for professionals and students. We used a
+                        convolutional neural network to classify well data from
+                        the North Sea.
+                    </span>
+                </li>
+                <li class="list-group-item">
+                    <span class="award-title">
+                        <strong>
+                            Petroleum Leeds Scholarship
+                        </strong>
+                        <br>2016-2017
+                    </span>
+                    <br>
+                    <span class="award-text">
+                        MSc scholarship I was awarded after attending an
+                        assessment day run by hydrocarbon industry
+                        representatives and academics from the University of
+                        Leeds.
+                    </span>
+                </li>
+                <li class="list-group-item">
+                    <span class="award-title">
+                        <strong>
+                            London Petrophysical Society Award
+                        </strong>
+                        <br>2016
+                    </span>
+                    <br>
+                    <span class="award-text">
+                        Awarded for graduating with the highest mark in my
+                        BSc cohort.
+                    </span>
+                </li>
+                <li class="list-group-item">
+                    <span class="award-title">
+                        <strong>
+                            University of Durham Alumni Award
+                        </strong>
+                        <br>2015
+                    </span>
+                    <br>
+                    <span class="award-text">
+                        Awarded for a set of high quality reports I wrote about
+                        gravity and electrical resistivity surveying during my BSc.
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer id="footer" class="text-center">
+    <p>
+        © 2021 Adam Goddard
+    </p>
+</footer>
+
+</body>
+
+</html>
